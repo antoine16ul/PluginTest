@@ -21,7 +21,7 @@ static void* load_library(const std::string& library_name) {
 
 static void* library_symbol(void* library,const std::string&symbol){
     return reinterpret_cast<void*>(
-			GetProcAddress(HMODULE(library, LPCSTR(symbol.c_str())));
+			GetProcAddress(HMODULE(library), LPCSTR(symbol.c_str())));
 }
 
 #else //UNIX
