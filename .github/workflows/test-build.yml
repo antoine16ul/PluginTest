@@ -29,4 +29,5 @@ jobs:
           cmake ..
           cmake --build . --config Debug
           cd Debug
-          main 
+          dir
+          main
