@@ -30,4 +30,4 @@ jobs:
           cmake --build . --config Debug
           cd Debug
           dir
-          main
+          ./main.exe
